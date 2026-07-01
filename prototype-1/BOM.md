@@ -10,7 +10,7 @@ Place all four orders the same day. McMaster can be will-call same day if you're
 
 | Component | Qty | Unit Price | Total | Link |
 |---|---|---|---|---|
-| Seeed XIAO nRF52840 - Paid | 3 | ~$10.99 | ~$32.97 | [amazon.com/s?k=seeed+xiao+nrf52840](https://www.amazon.com/s?k=seeed+xiao+nrf52840) |
+| ~~Seeed XIAO nRF52840 - Paid ~~| 3 | ~$10.99 | ~$32.97 | [amazon.com/s?k=seeed+xiao+nrf52840](https://www.amazon.com/s?k=seeed+xiao+nrf52840) |
 | Protected LiPo 3.7V 1500mAh flat pack | 2 | ~$13.99 | ~$27.98 | [amazon.com/s?k=1500mah+lipo+flat+protected+3.7v](https://www.amazon.com/s?k=1500mah+lipo+flat+protected+3.7v) |
 | TP4056 USB-C charging module (pack of 3) | 1 pack | ~$6.99 | ~$6.99 | [amazon.com/s?k=tp4056+usb-c+charging+module](https://www.amazon.com/s?k=tp4056+usb-c+charging+module) |
 | ~~AKNES AK202 TMR joystick module (Xbox Series footprint)~~ | ~~2~~ | ~~—~~ | ~~—~~ | ~~owned~~ — through-hole pins, analog X/Y output, mounts directly to perfboard. No breakout board needed. |
