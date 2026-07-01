@@ -18,7 +18,7 @@ This is the right first step. Validate everything on perfboard before committing
 | Final Spec | Prototype-1 Shortcut | Tradeoff |
 |---|---|---|
 | Custom mainboard PCB (KiCad) | FR4 perfboard, Dremel-cut to shape | No ground plane — may need software ADC smoothing on TMR reads |
-| Custom TMR daughterboards | Arduino joystick breakout modules, desolder stock pot, drop in TMR module | Verify ALPS hole spacing matches your specific TMR modules when parts arrive |
+| Custom TMR daughterboards | AKNES AK202 TMR modules (owned) — Xbox Series footprint, through-hole pins, mount directly to perfboard | 14 solder joints per module: 3×X axis, 3×Y axis, 4×button, 4×frame anchors. Analog X/Y output wires straight to XIAO ADC pins. |
 | Custom trigger sensor boards | AH49E wired direct, legs heat-shrunk, sensor glued into shell slot | No PCB. Advantage: physically shim sensor depth in the slot by reprinting at adjusted depth until voltage curve across full trigger travel is linear. Do this before finalising shell. |
 | Custom button boards | Small perfboard squares, switches soldered into grid | Slightly less mechanically rigid but fully functional |
 
@@ -38,8 +38,8 @@ The ERM motors draw heavy transient current. The VM pin needs raw battery voltag
 **2. BMI270 I2C pull-ups — verify before soldering**
 I2C requires pull-up resistors on SDA and SCL to function at all. Most BMI270 breakout boards include 4.7kΩ pull-ups onboard. Check your specific breakout before wiring it up. If it doesn't have them, solder two 4.7kΩ resistors between SDA→3.3V and SCL→3.3V on the perfboard. Without them the gyro will appear completely unresponsive.
 
-**3. Arduino joystick breakout — check X/Y traces before assuming clean passthrough**
-Some cheap breakout boards include a surface-mount pull-up resistor for the L3/R3 click button that sits across the X or Y signal trace. After desoldering the stock joystick, probe the X and Y output pins to the ALPS footprint holes with your multimeter in continuity mode. Confirm they're a straight connection with no unexpected passives in the path before installing the TMR module.
+**3. AK202 pin identification before soldering**
+The AK202 has 14 solder joints: 4 frame anchors (mechanical, solder for rigidity), 6 potentiometer-equivalent pins (3 per axis: VCC · signal · GND), and 4 button pins. Before committing wires, use a multimeter to confirm which pin is X signal and which is Y signal — power the module from 3.3V, probe each pin to GND with stick centered (~1.65V = signal pin), then deflect the stick to confirm it moves. Takes 5 minutes and prevents a rewire.
 
 ## What prototype-1 proves
 

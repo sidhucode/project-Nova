@@ -13,8 +13,7 @@ Place all four orders the same day. McMaster can be will-call same day if you're
 | Seeed XIAO nRF52840 | 3 | ~$10.99 | ~$32.97 | [amazon.com/s?k=seeed+xiao+nrf52840](https://www.amazon.com/s?k=seeed+xiao+nrf52840) |
 | Protected LiPo 3.7V 1500mAh flat pack | 2 | ~$13.99 | ~$27.98 | [amazon.com/s?k=1500mah+lipo+flat+protected+3.7v](https://www.amazon.com/s?k=1500mah+lipo+flat+protected+3.7v) |
 | TP4056 USB-C charging module (pack of 3) | 1 pack | ~$6.99 | ~$6.99 | [amazon.com/s?k=tp4056+usb-c+charging+module](https://www.amazon.com/s?k=tp4056+usb-c+charging+module) |
-| GuliKit TMR electromagnetic joystick module | 2 pairs | ~$29.99/pair | ~$59.98 | [amazon.com/s?k=gulikit+electromagnetic+joystick+module](https://www.amazon.com/s?k=gulikit+electromagnetic+joystick+module) — **verify the listing is the bare TMR module with ALPS pinout, not a complete thumbstick assembly** |
-| Arduino PS2 joystick breakout module (5-pack) | 1 pack | ~$4.99 | ~$4.99 | [amazon.com/s?k=arduino+joystick+module+ps2+5+pin](https://www.amazon.com/s?k=arduino+joystick+module+ps2+5+pin) |
+| ~~AKNES AK202 TMR joystick module (Xbox Series footprint)~~ | ~~2~~ | ~~—~~ | ~~—~~ | ~~owned~~ — through-hole pins, analog X/Y output, mounts directly to perfboard. No breakout board needed. |
 | AH49E linear Hall effect sensor (10-pack) | 1 pack | ~$7.99 | ~$7.99 | [amazon.com/s?k=AH49E+hall+effect+sensor](https://www.amazon.com/s?k=AH49E+hall+effect+sensor) |
 | Neodymium disc magnets 3mm×2mm N52 (50-pack) | 1 pack | ~$6.99 | ~$6.99 | [amazon.com/s?k=neodymium+disc+magnet+3mm+2mm+N52](https://www.amazon.com/s?k=neodymium+disc+magnet+3mm+2mm+N52) |
 | ERM coin vibration motor 10mm 3V (6-pack) | 1 pack | ~$8.99 | ~$8.99 | [amazon.com/s?k=erm+coin+vibration+motor+10mm+3v](https://www.amazon.com/s?k=erm+coin+vibration+motor+10mm+3v) |
@@ -40,7 +39,7 @@ Place all four orders the same day. McMaster can be will-call same day if you're
 | ~~Joystick soldering iron tip~~ | ~~1~~ | ~~$9.99~~ | ~~$9.99~~ | ~~purchased~~ |
 | ~~PCB vise~~ | ~~1~~ | ~~$19.99~~ | ~~$19.99~~ | ~~purchased~~ |
 | ~~ESD (anti-static) work gloves~~ | ~~1 pair~~ | ~~$9.99~~ | ~~$9.99~~ | ~~purchased~~ |
-| **Amazon Subtotal** | | | **~$265.72** | |
+| **Amazon Subtotal** | | | **~$200.75** | |
 
 ---
 
@@ -81,13 +80,11 @@ Place all four orders the same day. McMaster can be will-call same day if you're
 
 | Order | Subtotal |
 |---|---|
-| Amazon | ~$265.72 |
+| Amazon | ~$200.75 |
 | Adafruit | ~$5.90 + ~$8 2-day shipping |
 | Mouser | ~$29.90 + ~$10 2-day air |
 | McMaster-Carr | ~$31.50 (free if will-call) |
-| **Grand Total** | **~$351 shipped** |
-
-> **Note on GuliKit TMR modules:** The Amazon listing must be the bare TMR sensor module with ALPS pinout footprint — not a complete replacement thumbstick assembly for PS5/Xbox repair. If the correct bare module is not available on Amazon, order directly from gulikit.com. Verify ALPS hole spacing matches the Arduino joystick breakout PCB with a multimeter before soldering.
+| **Grand Total** | **~$286 shipped** |
 
 ---
 
@@ -96,7 +93,7 @@ Place all four orders the same day. McMaster can be will-call same day if you're
 | Final BOM Item | Status |
 |---|---|
 | Custom mainboard PCB | ❌ Replaced by FR4 perfboard |
-| Custom TMR daughterboards | ❌ Replaced by Arduino joystick breakouts |
+| Custom TMR daughterboards | ❌ Not needed — AK202 TMR modules (owned) mount directly to perfboard via through-hole pins |
 | Custom trigger sensor boards | ❌ Replaced by direct-wired AH49E |
 | Custom button boards | ❌ Replaced by cut perfboard squares |
 | AMS1117-3.3 LDO | ❌ Removed — use XIAO internal regulator |
